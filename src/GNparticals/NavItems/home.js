@@ -1,8 +1,13 @@
 import React from "react";
 
-const Home=()=> {
+const Home=(props)=> {
+
+
+    // setTimeout(()=>{
+    //     props.history.goBack(1)
+    // },2000)
     return ( 
-        <div className="is raised vaery padded text conatiner segment" style={
+        <div className="ui raised very padded text container segment" style={
             {marginTop:'80px'}
         }>
             <h3 className="ui haeder">Home</h3>

@@ -1,8 +1,8 @@
-import React from "react";
+
 
 const About=()=> {
     return ( 
-        <div className="is raised vaery padded text conatiner segment" style={
+        <div className="ui raised very padded text container segment" style={
             {marginTop:'80px'}
         }>
             <h3 className="ui haeder">About</h3>

@@ -1,19 +1,22 @@
-import react from "react";
-import Home from "./NavItems/home";
-import Contact from "./NavItems/contact";
-import About from "./NavItems/about";
+import { NavLink,withRouter } from "react-router-dom";
+
+
 
 const NavBar = ()=>{
     return ( 
-        <nav className="ui raised very padded segment">
-            <a className="ui teal inverted segment">NavBar</a>
-            <div className="ui right floated header">
-                <button className="ui button"><a href="/">Home</a></button>
-                <button className="ui button"><a href="/about"></a>About</button>
-                <button className="ui button"><a href="/contact"></a>Contact</button>
-            </div>
+        <div className="ui inverted vertical masthead center aligned segment">
+            <nav className="ui large secondary inverted pointing menu">
+                <div className="ui container">
+                    <div className="ui large secondary inverted pointing menu">
+                        <button className="item"><NavLink to="/">Home</NavLink></button>
+                        <button className="item"><NavLink to="/about">About</NavLink></button>
+                        <button className="item"><NavLink to="/contact">Contact</NavLink></button>
+                    </div>                   
+                </div>
         </nav>
+        </div>
+        
      );
 }
 
-export default NavBar;
+export default withRouter(NavBar);
